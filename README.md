@@ -18,6 +18,8 @@ python /tf_files/src/label_image.py "/tf_files/images/test-image.jpg"
 1. Put images into /images
 
 2. Create new training data with:
+
+```
 python /tensorflow/tensorflow/examples/image_retraining/retrain.py \
 --bottleneck_dir=/tf_files/bottlenecks \
 --how_many_training_steps 500 \
@@ -25,3 +27,4 @@ python /tensorflow/tensorflow/examples/image_retraining/retrain.py \
 --output_graph=/tf_files/retrained_graph.pb \
 --output_labels=/tf_files/retrained_labels.txt \
 --image_dir /tf_files/images/
+```
