@@ -1,14 +1,13 @@
-# spiderman_detection_tensorflow
-Spiderman Detection with Tensorflow
+# Image Classification with tensorflow
 
 1. Start a tensorflow docker container and mount tf_files into the container
 ```
-docker run -it -v ~/Projects/spiderman_detection_tensorflow/tf_files:/tf_files gcr.io/tensorflow/tensorflow:latest-devel
+docker run -it -v ~/Projects/image_classification_tensorflow/tf_files:/tf_files gcr.io/tensorflow/tensorflow:latest-devel
 ```
 
 2. cd /tensorflow; git pull;
 
-# Test if image contains spiderman
+# Guess if image contains trained search patterns
 ```
 python /tf_files/src/label_image.py "/tf_files/images/test-image.jpg"
 ```
